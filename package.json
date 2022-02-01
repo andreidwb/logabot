@@ -6,13 +6,13 @@
   "author": "Andrei Olaru",
   "license": "MIT",
   "scripts": {
-    "start:watch": "SET NODE_ENV=development&& nodemon src/index.ts",
-    "start": "SET NODE_ENV=production&& npx ts-node dist",
-    "dev": "SET NODE_ENV=development&& nodemon",
+    "start": "cross-env NODE_ENV=production npx ts-node dist",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.ts",
     "build": "rimraf dist && tsc"
   },
   "dependencies": {
     "@types/request-promise": "^4.1.48",
+    "cross-env": "^7.0.3",
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
     "http-terminator": "^3.0.4",
