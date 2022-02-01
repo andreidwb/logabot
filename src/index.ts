@@ -372,7 +372,7 @@ function getJoke(): Promise<Joke> {
     });
 };
 
-function replyShortCrypto(ctx: Context<{ message: Update.New & Update.NonChannel & Message.TextMessage; update_id: number; }>, stock: string) {
+function replyShortCrypto(ctx: any, stock: string) {
   let user = getUser(ctx);
 
   if (stock == undefined || stock.trim() == "") {

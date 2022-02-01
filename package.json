@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "amc-bot initialised with create-express-typescript-application.",
   "main": "src/index.ts",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "tsc",
     "start": "tsc && npx kill-port 8080 && node ./build/src/index.js",
@@ -39,6 +40,6 @@
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "telegraf": "^4.3.0",
-    "yahoo-finance2": "^1.10.4"
+    "yahoo-finance2": "^2.1.2"
   }
 }
